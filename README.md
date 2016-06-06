@@ -12,6 +12,7 @@ Main Program:
 - Modified the input string split to handle a different input format
 - Also modified the input to handle negative values
 - Because this is a round table, a 'trip' between three people is no longer 1-2-3, but 1-2-3-1. Added an extra iteration of the summation to account for this last-to-first item.
+- The summation of total happiness also now accounts for their two-way nature. A trip of 1-2-3 had two distances to add up (1->2 and 2->3), but a table of 1-2-3 has to add 1->2, 2->1, 2->3, 3->2, 3->1, 1->3.
 
 CityManager:
 - Relaxed input validations to allow negative values (still disallows duplicates)
